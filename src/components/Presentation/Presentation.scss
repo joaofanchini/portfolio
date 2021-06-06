@@ -1,0 +1,39 @@
+section.AppSectionPresentation{
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+
+  & section.AppSectionProfilePresentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    & ul.social-media-list{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  & article.AppPresentationContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+    height: 35vh;
+    margin-top: 40px;
+    padding: 20px 0px;
+
+    & Button{
+      margin-top: 40px;
+    }
+  }
+}
+
+img.AppProfile{
+  max-width: 220px;
+  max-height: 220px;
+  margin: 10px;
+}

@@ -1,0 +1,34 @@
+@import "src/global-styles/colors";
+
+nav.navigation-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: $color-mono-1;
+  color:$white-color;
+  border-radius:2px;
+}
+
+span.navigation-menu-logo{
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+ul.navigation-menu-itens{
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & li:not(:last-child){
+    margin: auto 20px;
+  }
+}

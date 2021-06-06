@@ -1,0 +1,18 @@
+@import "src/global-styles/colors";
+
+button.AppButton{
+  background-color: $button-color;
+  border-radius: 5px;
+  color: $white-color;
+  border:none;
+  box-shadow: 0 3px 6px;
+  width: 150px;
+  height: 45px;
+  padding: 5px 5px ;
+  transition: .25s ease;
+
+  &:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,.2);
+    transform: translateY(-1px);
+  }
+}

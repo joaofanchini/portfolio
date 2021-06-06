@@ -1,0 +1,23 @@
+div.AppTabContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+div.AppLabelGroup{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  & label.AppLabelTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & input.AppRadioTab{
+    display: none;
+  }
+}
