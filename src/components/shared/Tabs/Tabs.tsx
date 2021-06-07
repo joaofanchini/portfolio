@@ -17,9 +17,7 @@ const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
     const handleCheckedElement = (event: ChangeEvent<HTMLInputElement>) => {
         if (event.target.id) {
             setIdElementSelected(event.target.id)
-            console.log(idElementSelected)
         }
-
     }
     return (
         <>
@@ -29,8 +27,8 @@ const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
                         props.content.map((c, index) => {
                             return (
                                 <label key={index} htmlFor={c.id} className='AppLabelTab'>
-                                    {c.icon || ''}
-                                    {c.labelContent}
+                                    <h2>{c.icon || ''}</h2>
+                                    <h2>{c.labelContent}</h2>
                                     <input type='radio' name='journey' className='AppRadioTab' id={c.id}
                                            checked={c.id === idElementSelected}
                                            onChange={(e) => handleCheckedElement(e)}/>

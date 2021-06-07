@@ -6,22 +6,57 @@ import Tabs from "../shared/Tabs";
 import {TabsContent} from "../shared/Tabs/Tabs";
 import {IoBagSharp} from 'react-icons/io5'
 import {ImBooks} from 'react-icons/im'
-import Presentation from "../Presentation";
-import Navigation from "../Navigation";
+import {BsCalendar} from 'react-icons/bs'
+import Timeline from "../shared/Timeline";
+import {TimelineElement} from "../shared/Timeline/Timeline";
 
 const Journey: React.FC<any> = () => {
+    const timeLineStudies: TimelineElement[] = [
+        {
+            title: 'titulo estudo',
+            description: 'teste estudo description',
+            rangeDate: '2019-2020',
+            iconCalendar: <BsCalendar/>
+        },
+        {
+            title: 'titulo',
+            description: 'teste estudo description',
+            rangeDate: '2019-2020',
+            iconCalendar: <BsCalendar/>
+        },
+        {
+            title: 'titulo',
+            description: 'teste estudo description',
+            rangeDate: '2019-2020',
+            iconCalendar: <BsCalendar/>
+        }
+    ]
+    const timeLineWork: TimelineElement[] = [
+        {
+            title: 'teste work titulo',
+            description: 'teste description work',
+            rangeDate: '2020-2021',
+            iconCalendar: <BsCalendar/>
+        },
+        {
+            title: 'teste work',
+            description: 'teste description work',
+            rangeDate: '2020-2021',
+            iconCalendar: <BsCalendar/>
+        }
+    ]
     let tabs: TabsContent[] = [
         {
             id: 'work',
             labelContent: 'Trabalho',
             icon: <IoBagSharp size={30}/>,
-            elementToShow: <Presentation/>
+            elementToShow: <Timeline elements={timeLineWork}/>
         },
         {
             id: 'studies',
             labelContent: 'Estudos',
             icon: <ImBooks size={30}/>,
-            elementToShow: <Navigation/>
+            elementToShow: <Timeline elements={timeLineStudies}/>
         }]
     return (
         <DefaultPage title='Jornada' subTitle='Minha jornada até aqui'>

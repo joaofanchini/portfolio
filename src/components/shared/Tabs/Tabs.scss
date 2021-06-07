@@ -8,7 +8,7 @@ div.AppTabContainer{
 div.AppLabelGroup{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 30px;
 
   & label.AppLabelTab{
     display: flex;
@@ -21,3 +21,9 @@ div.AppLabelGroup{
     display: none;
   }
 }
+
+div.AppTabElementShow{
+  margin: 50px auto;
+}
+
+

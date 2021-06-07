@@ -1,0 +1,47 @@
+@import "src/global-styles/fonts";
+@import "src/global-styles/colors";
+
+div.AppTimelineData{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+  min-height: 100px;
+}
+
+span.AppTimelineQualificationRounder{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  z-index: 900;
+  position: relative;
+  background-color: $color-matiz;
+  border-radius: 50%;
+}
+
+span.AppTimelineQualificationLine{
+  display: block;
+  width: 2px;
+  z-index: -950px;
+  position: relative;
+  height: 100%;
+  background-color: black;
+  transform: translate(9px,-15px);
+}
+div.AppTimelineDataContent{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  gap: 5px;
+
+  & h3.AppTimelineDataTitle{
+    font-size: $font-medium-size;
+    font-weight: bold;
+  }
+
+  & div.AppTimelineDataRangeDate{
+    margin-top: 10px;
+    font-size: $font-lower-size;
+  }
+}
+
+
