@@ -1,7 +1,9 @@
 section.AppSectionPresentation{
   display: flex;
   flex-direction: column;
-  height: 98vh;
+  height: 90vh;
+  margin-top: 40px;
+  max-height: 711px;
 
   & section.AppSectionProfilePresentation{
     display: flex;
@@ -22,8 +24,6 @@ section.AppSectionPresentation{
     flex-direction: column;
     gap: 20px;
     justify-content: left;
-    height: 35vh;
-    margin-top: 40px;
     padding: 20px 0px;
 
     & Button{
@@ -35,5 +35,5 @@ section.AppSectionPresentation{
 img.AppProfile{
   max-width: 220px;
   max-height: 220px;
-  margin: 10px;
+  margin: 20px;
 }

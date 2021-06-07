@@ -12,16 +12,15 @@ span.AppTimelineQualificationRounder{
   display: inline-block;
   width: 20px;
   height: 20px;
-  z-index: 900;
   position: relative;
-  background-color: $color-matiz;
+  background-color: $button-color;
   border-radius: 50%;
 }
 
 span.AppTimelineQualificationLine{
   display: block;
   width: 2px;
-  z-index: -950px;
+  z-index: -1;
   position: relative;
   height: 100%;
   background-color: black;
@@ -34,13 +33,11 @@ div.AppTimelineDataContent{
   gap: 5px;
 
   & h3.AppTimelineDataTitle{
-    font-size: $font-medium-size;
     font-weight: bold;
   }
 
   & div.AppTimelineDataRangeDate{
     margin-top: 10px;
-    font-size: $font-lower-size;
   }
 }
 

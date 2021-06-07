@@ -13,8 +13,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     return (
         <button className='AppButton'
                 onClick={props.onClick}>
-            {props.icon || ''}
-            {props.content || ''}
+            {props.icon || ''} {props.content || ''}
         </button>
     );
 }

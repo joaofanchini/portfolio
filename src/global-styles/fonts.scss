@@ -1,15 +1,27 @@
 $font-lower-size: 12pt;
 $font-medium-size: 15pt;
+$font-bigger-size: 20pt;
 
 html *{
   font-family: 'Ubuntu', serif;
 }
 
 h1 {
-  font-size: 20pt;
-  font-weight: 600;
+  font-size: $font-bigger-size;
+  font-weight: 900;
 }
 h2{
-  font-size: 15pt;
-  font-weight: 300;
+  font-size: $font-medium-size;
+  font-family: "Ubuntu Thin", serif;
+  font-weight: 900;
 }
+h3{
+  font-size: $font-medium-size;
+  font-weight: 500;
+  font-family: "Ubuntu Light", serif;
+}
+p {
+  font-size: $font-lower-size;
+  font-family: "Ubuntu Mono", serif;
+}
+

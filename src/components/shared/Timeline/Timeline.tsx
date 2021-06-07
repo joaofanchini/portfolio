@@ -17,7 +17,7 @@ const Timeline: React.FC<TimelineProps> = (props) => {
     function renderCommons(index: number, element: TimelineElement): JSX.Element {
         return (<div className='AppTimelineDataContent'>
             <h3 className='AppTimelineDataTitle'>{element.title}</h3>
-            <span className='AppTimelineDataDescription'>{element.description}</span>
+            <span className='AppTimelineDataDescription'><p>{element.description}</p></span>
             <div className='AppTimelineDataRangeDate'>{element.iconCalendar} {element.rangeDate}</div>
         </div>);
     }

@@ -4,6 +4,7 @@ import './Presentation.scss'
 import profile from '../../assets/image_profile.png'
 import Button from "../shared/Button";
 import {FaLinkedin,FaGithub} from 'react-icons/fa'
+import {SiMinutemailer} from 'react-icons/si'
 
 const Presentation: React.FC<any> = () => {
     return (
@@ -17,7 +18,7 @@ const Presentation: React.FC<any> = () => {
                     <img className='AppProfile' alt='app-profile' src={profile}/>
                 </section>
                 <article className='AppPresentationContent'>
-                    <div className='AppTitle'>
+                    <div className='AppTitle' >
                         <h1>Olá, me chamo <span className='bold'>João Victor</span></h1>
                         <h2>Desenvolvedor Fullstack</h2>
                     </div>
@@ -26,7 +27,7 @@ const Presentation: React.FC<any> = () => {
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         It has survived not only five centuries
                     </p>
-                    <Button content='Entre em contato'/>
+                    <Button content='Entre em contato' icon={<SiMinutemailer size={40}/>}/>
                 </article>
             </section>
         </>

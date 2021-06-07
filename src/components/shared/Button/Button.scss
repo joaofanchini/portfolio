@@ -1,13 +1,17 @@
 @import "src/global-styles/colors";
 
 button.AppButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: $button-color;
   border-radius: 5px;
   color: $white-color;
   border:none;
   box-shadow: 0 3px 6px;
   width: 150px;
-  height: 45px;
+  height: 55px;
   padding: 5px 5px ;
   transition: .25s ease;
 
