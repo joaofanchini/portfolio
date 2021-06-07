@@ -1,3 +1,5 @@
+@import "src/global-styles/colors";
+
 section.AppSectionPresentation{
   display: flex;
   flex-direction: column;
@@ -36,4 +38,12 @@ img.AppProfile{
   max-width: 220px;
   max-height: 220px;
   margin: 20px;
+}
+.AppPresentationIcon{
+  color: $button-color;
+  cursor: pointer;
+  transition: .2s ease-in;
+  &:hover{
+    transform: scale(1.2);
+  }
 }

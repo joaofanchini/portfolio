@@ -12,8 +12,8 @@ const Presentation: React.FC<any> = () => {
             <section className='AppSectionPresentation'>
                 <section className='AppSectionProfilePresentation'>
                     <ul className='social-media-list'>
-                        <li><FaGithub size={25}/></li>
-                        <li><FaLinkedin size={25}/></li>
+                        <li><FaGithub size={25} className='AppPresentationIcon'/></li>
+                        <li><FaLinkedin size={25} className='AppPresentationIcon'/></li>
                     </ul>
                     <img className='AppProfile' alt='app-profile' src={profile}/>
                 </section>

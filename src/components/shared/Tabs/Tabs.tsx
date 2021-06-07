@@ -27,7 +27,7 @@ const Tabs: React.FC<TabsProps> = (props: TabsProps) => {
                         props.content.map((c, index) => {
                             return (
                                 <label key={index} htmlFor={c.id} className='AppLabelTab'>
-                                    <h2>{c.icon || ''}</h2>
+                                    <span className='AppTabsIcon'>{c.icon || ''}</span>
                                     <h2>{c.labelContent}</h2>
                                     <input type='radio' name='journey' className='AppRadioTab' id={c.id}
                                            checked={c.id === idElementSelected}
