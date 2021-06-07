@@ -19,11 +19,11 @@ span.AppTimelineQualificationRounder{
 
 span.AppTimelineQualificationLine{
   display: block;
-  width: 2px;
+  width: 1px;
   z-index: -1;
+  border-left: 1.5px dashed black;
   position: relative;
   height: 100%;
-  background-color: black;
   transform: translate(9px,-15px);
 }
 div.AppTimelineDataContent{
